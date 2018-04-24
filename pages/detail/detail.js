@@ -15,7 +15,7 @@ Page({
     this.setData({
       images: options.image,
       titles: options.title,
-      details: options.title + index
+      details: options.title + index + "******"
     })
     wx.setNavigationBarTitle({
       title: that.data.titles,
