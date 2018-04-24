@@ -1,6 +1,5 @@
 # wechat_progream
-微信小程序的demo，数据基本都是自己模拟数据。
-----
+###微信小程序的demo，数据基本都是自己模拟数据。
 <br>
 
 ![img](https://github.com/cherry410/wechat_progream/blob/master/display_img/wechat_first.png)
