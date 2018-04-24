@@ -1,0 +1,7 @@
+<!--pages/order/order.wxml-->
+<view class='container'>
+  <navigator url='../detail/detail?image={{item.image}}&title={{item.title}}' class='order_nav' wx:for="{{list}}" wx:for-index="id">
+    <image src='{{item.image}}' class='order_img'></image>
+    <text class='order_content'>{{item.title}}</text>
+  </navigator>
+</view>

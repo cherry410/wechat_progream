@@ -1,0 +1,100 @@
+/**index.wxss**/
+.banners {
+  width: 100%;
+  height: 400rpx;
+}
+.banner{
+  position: relative;
+}
+.banner_image{
+  width: 100%;
+  height: 100%;
+}
+.banner_title{
+  color: #FFF;
+  position: absolute;
+  font-size: 16px;
+  margin-right: 32rpx;
+  margin-left: 32rpx;
+  bottom: 30rpx;
+  right: 0;
+}
+.nearby_title{
+  left: 0;
+  font-size: 16px;
+  margin-left: 32rpx;
+  margin-top: 32rpx;
+  width: 100%;
+  color: #fd9800;
+  display: block;
+}
+
+.nearby_list{
+  width: 100%;
+  height:200rpx;
+  overflow: hidden;
+  background: #fff;
+  white-space: nowrap;
+}
+
+.neaby_item{
+  width: auto;
+  height: 200rpx;
+  padding: 32rpx;
+  overflow: hidden;
+  display: inline-block;
+}
+.nearby_text{
+  background-color: #FF4081;
+  width: 100rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  display:table-cell; 
+  vertical-align:middle;  
+  text-align: center; /*设置文本水平居中*/ 
+  float: left;
+}
+.nearby_image{
+  height: 200rpx;
+  width: 220rpx;
+  float: left;
+}
+.nearby_image_sub{
+  width:220rpx;
+  height:200rpx;
+}
+
+.recommend_container{
+  width: 100%;
+  height: 300rpx;
+  background-color: #fff;
+  
+}
+
+.sub_title{
+  font-size: 16px;
+  color: red;
+  text-align: center;
+}
+
+/* -webkit-tap-highlight-color: transparent;  for some android */
+.recommend_items{
+  height: 300rpx;
+  border: 1px solid #f2f2f2;
+  margin: 32rpx 32rpx;
+  padding: 32rpx;
+  border-radius: 5px;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}  
+
+.recommend_left_text{
+  width: 200rpx;
+  height: 300rpx;
+  background-color: white;
+}
+.recommend_right_img{
+  width: 240rpx;
+  height: 240rpx;
+}

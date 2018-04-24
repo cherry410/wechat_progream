@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots='{{indicatorDots}}' class='banners'
+     autoplay="{{autoPlay}}" interval="{{interval}}" indicator-color="{{indicatorColor}}"
+     indicator-active-color="{{indicatorActiveColor}}" duration="{{duration}}">
+     <block wx:for="{{banner}}">
+        <swiper-item class="banner">
+          <image src='{{item.image}}' class="banner_image" width="100%" height="100%"></image>
+          <text class="banner_title">{{item.title}}</text>
+        </swiper-item>
+     </block>
+  </swiper>
+
+  <text class='nearby_title'>附近房源</text>
+  <scroll-view class='nearby_list' scroll-x>
+    <navigator url='../logs/logs' class='neaby_item' wx:for="{{neary_imgs}}">
+      <view class='nearby_text'>first</view>
+      <view class='nearby_image'>
+        <image src='{{item.image}}'  class='nearby_image_sub'></image>
+      </view>
+    </navigator>
+  </scroll-view>
+
+  <text class='nearby_title'>今日推荐</text>
+  <view class='recommend_container' hover-class='none'>
+    <block wx:for="{{recommend_list}}" wx:for-index="id" hover-class='none'>
+      <text wx:if="{{item.header}}" class='sub_title'>{{item.header}}</text>
+      <navigator wx:else url='../detail/detail?id={{item.id}}&image={{item.image}}&title={{item.title}}' hover-class='none'>
+       <view class='recommend_items'>
+         <view class='recommend_left_text'>{{item.title}}</view>
+         <view class='recommend_right_img'>
+          <image src='{{item.image}}' class='recommend_right_img'></image>
+         </view>
+       </view>
+      </navigator>
+    </block>
+  </view>
+</view>

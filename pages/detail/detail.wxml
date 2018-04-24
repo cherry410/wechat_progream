@@ -1,0 +1,5 @@
+<!--pages/details/details.wxml-->
+<view class="container">
+  <image src='{{images}}' class='image_details'></image>
+  <text class='detials_text'>{{details}}</text>
+</view>

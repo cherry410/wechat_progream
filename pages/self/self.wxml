@@ -1,0 +1,8 @@
+<view class='container'>
+  <view class='self_bg'>
+    <image class='self_head_bg' src='../../images/self_new_bg.png'></image>
+    <image wx:if="{{!isUserInfo && canIUse}}" class='self_icon' src='../../images/app_icons.png'></image>
+    <image wx:else class='self_icon' src='{{userInfo.avatarUrl}}'></image>
+    <text class='self_username'>{{userInfo.nickName}}</text>
+  </view>
+</view>
