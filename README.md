@@ -2,7 +2,7 @@
 ###微信小程序的demo，数据基本都是自己模拟数据。
 <br>
 
-![img](https://github.com/cherry410/wechat_progream/blob/master/display_img/wechat_home.png)
+![img](https://github.com/cherry410/wechat_progream/blob/master/display_img/wechat_homes.png)
 
 
 1、实现三个tab的切换；<br>
