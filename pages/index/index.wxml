@@ -20,7 +20,6 @@
       </view>
     </navigator>
   </scroll-view>
-
   <text class='nearby_title'>今日推荐</text>
   <view class='recommend_container' hover-class='none'>
     <block wx:for="{{recommend_list}}" wx:for-index="id" hover-class='none'>

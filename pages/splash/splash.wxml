@@ -1,0 +1,8 @@
+<view class='container'>
+  <swiper class='splash' indicator-dots='{{indicatorDots}}'  bindchange='touchMove'>
+      <swiper-item wx:for="{{guide}}" wx:index="index" wx:key="id">
+        <image src='{{item}}' class='slide_img' mode='aspectFill'></image>
+         <button class='skip_index' wx:if="{{index == guide.length - 1}}" bindtap='skip'>立即体验</button> 
+      </swiper-item>  
+  </swiper>
+</view>
